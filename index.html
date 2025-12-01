@@ -1,96 +1,110 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Mariya I. Vasileva</title>
-
+<head>
+    <meta charset="UTF-8">
     <meta name="author" content="Mariya I. Vasileva">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Mariya I. Vasileva</title>
+    <link rel="stylesheet" href="stylesheets.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  </head>
+</head>
+<body>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr style="padding:0px">
-            <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                    <p class="name" style="text-align: center;">
-                    Mariya I. Vasileva
-                    </p>
-                    <p>My name is Mariya, and I'm interested in all things computer vision, generative models, video analysis and understanding, and ethics of AI systems at scale. I spent a number of years in industry research and worked on a range of problems, from image and video generative models, to visual recommender engines, to 2D-to-3D human body shape and pose modelling, to synthetic data generation for efficient training of foundation models at scale, to fairness and explainability of AI systems. I obtained my PhD in Computer Science from the <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a> under the advisorship of professor <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>, where I researched problems in vision and language, visual search and retrieval, and applications of computer vision in the fashion domain.
-                    </p>
-                    <p style="text-align:center">
-                    <a href="mailto:maria.i.vasileva@gmail.com">Email</a> &nbsp;/&nbsp;
-                    <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
-                    <a href="https://scholar.google.com/citations?user=I7LbGLUAAAAJ&hl">Google Scholar</a> &nbsp;/&nbsp;
-                    <a href="https://twitter.com/mariyaivasileva">Twitter</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/mvasil/">Github</a>
-                    </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/profile-photo.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/profile-photo.jpeg" class="hoverZoomLink"></a>
-                </td>
-                </tr>
-            </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Research</h2>
-                    <p>
-                        My experience lies at the crossover between generative models, multimodal learning, vision and language, foundation models, safety and alignment.
-                    </p>
-                </td>
-                </tr>
-            </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <!-- Main container table -->
+    <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
+        <tbody>
+            <tr>
+                <td>
 
-        <tr onmouseout="handsoff_stop()" onmouseover="handsoff_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                <div class="two" id='handsoff_image'>
-                    <img src='images/handsoff1.png' width="160"></div>
-                <img src='images/handsoff2.png' width="160">
-                </div>
-                <script type="text/javascript">
-                function handsoff_start() {
-                    document.getElementById('handsoff_image').style.opacity = "1";
-                }
-    
-                function handsoff_stop() {
-                    document.getElementById('handsoff_image').style.opacity = "0";
-                }
-                handsoff_stop()
-                </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://austinxu87.github.io/handsoff/">
-                <span class="papertitle">HandsOff: Labeled Dataset Generation with No Additional Human Annotations</span>
-                </a>
-                <br>
-                <a href="https://austinxu87.github.io/">Austin Xu</a>,
-                <strong>Mariya I. Vasileva</strong>,
-                <a href="http://www.achaldave.com/">Achal Dave</a>,
-                <a href="https://arjunsesh.github.io/">Arjun Seshadri</a>
-                <br>
-                <em>CVPR</em>, 2023
-                <br>
-                <a href="https://austinxu87.github.io/handsoff/">project page</a>
-                /
-                <a href="https://github.com/austinxu87/handsoff/">code</a>
-                /
-                <a href="https://arxiv.org/pdf/2212.12645.pdf">arXiv</a>
-                <p></p>
-                <p>
-                HandsOff is a framework capable of producing synthetic images with corresponding pixel-level labels without requiring additional human annotations. HandsOff utilizes a small number of real labeled images and exploits the rich latent representations of GANs to train an effectively infinite label generator.
-                </p>
-            </td>
+                    <!-- Top section: Name, bio, links -->
+                    <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p class="name" style="text-align:center;">Mariya I. Vasileva</p>
+                                    <p>
+                                        My name is Mariya, and I'm interested in all things computer vision, generative models, video analysis and understanding, and ethics of AI systems at scale. I spent a number of years in industry research and worked on a range of problems, from image and video generative models, to visual recommender engines, to 2D-to-3D human body shape and pose modelling, to synthetic data generation for efficient training of foundation models at scale, to fairness and explainability of AI systems. I obtained my PhD in Computer Science from the <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a> under the advisorship of professor <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>, where I researched problems in vision and language, visual search and retrieval, and applications of computer vision in the fashion domain.
+                                    </p>
+                                    <p style="text-align:center;">
+                                        <a href="mailto:maria.i.vasileva@gmail.com">Email</a> &nbsp;/&nbsp;
+                                        <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                                        <a href="https://scholar.google.com/citations?user=I7LbGLUAAAAJ&hl">Google Scholar</a> &nbsp;/&nbsp;
+                                        <a href="https://twitter.com/mariyaivasileva">Twitter</a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/mvasil/">Github</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%">
+                                    <a href="images/profile-photo.jpeg">
+                                        <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile-photo.jpeg" class="hoverZoomLink">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Research section -->
+                    <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:100%;vertical-align:middle">
+                                    <h2>Research</h2>
+                                    <p>
+                                        My experience lies at the crossover between generative models, multimodal learning, vision and language, foundation models, safety and alignment.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- HandsOff project section -->
+                    <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr onmouseout="handsoff_stop()" onmouseover="handsoff_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='handsoff_image'>
+                                            <img src='images/handsoff1.png' width="160" alt="HandsOff image 1">
+                                        </div>
+                                        <img src='images/handsoff2.png' width="160" alt="HandsOff image 2">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function handsoff_start() {
+                                            document.getElementById('handsoff_image').style.opacity = "1";
+                                        }
+                                        function handsoff_stop() {
+                                            document.getElementById('handsoff_image').style.opacity = "0";
+                                        }
+                                        handsoff_stop();
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://austinxu87.github.io/handsoff/">
+                                        <span class="papertitle">HandsOff: Labeled Dataset Generation with No Additional Human Annotations</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://austinxu87.github.io/">Austin Xu</a>,
+                                    <strong>Mariya I. Vasileva</strong>,
+                                    <a href="http://www.achaldave.com/">Achal Dave</a>,
+                                    <a href="https://arjunsesh.github.io/">Arjun Seshadri</a>
+                                    <br>
+                                    <em>CVPR</em>, 2023
+                                    <br>
+                                    <a href="https://austinxu87.github.io/handsoff/">project page</a> /
+                                    <a href="https://github.com/austinxu87/handsoff/">code</a> /
+                                    <a href="https://arxiv.org/pdf/2212.12645.pdf">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        HandsOff is a framework capable of producing synthetic images with corresponding pixel-level labels without requiring additional human annotations. HandsOff utilizes a small number of real labeled images and exploits the rich latent representations of GANs to train an effectively infinite label generator.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
             </tr>
-        </table>
-    </body>
-<html> 
+        </tbody>
+    </table>
+
+</body>
+</html>
