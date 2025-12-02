@@ -108,6 +108,54 @@
                         </tbody>
                     </table>
 
+                    <!-- Fashion Compatibility project section -->
+                    <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr onmouseout="fashion_stop()" onmouseover="fashion_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='fashion_image'>
+                                            <img src='images/fashion1.png' width="160" alt="fashion image 1">
+                                        </div>
+                                        <img src='images/fashion2.png' width="160" alt="fashion image 2">
+                                    </div>
+                                    <script type="text/javascript">
+                                        function fashion_start() {
+                                            document.getElementById('fashion_image').style.opacity = "1";
+                                        }
+                                        function fashion_stop() {
+                                            document.getElementById('fashion_image').style.opacity = "0";
+                                        }
+                                        fashion_stop();
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://arxiv.org/pdf/1803.09196">
+                                        <span class="papertitle">
+                                            Learning Type-Aware Embeddings for Fashion Compatibility
+                                        </span>
+                                    </a>
+                                    <br>
+                                    <strong>Mariya I. Vasileva</strong>,
+                                    <a href="https://bryanplummer.com/">Bryan A. Plummer</a>,
+                                    <a>Krishna Dusad</a>,
+                                    <a href="https://shreya-rajpal.com/">Shreya Rajpal</a>,
+                                    <a href="https://ranjithakumar.net/">Ranjitha Kumar</a>,
+                                    <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>
+                                    <br>
+                                    <em>ECCV</em>, 2018
+                                    <br>
+                                    <a href="https://github.com/mvasil/fashion-compatibility">code</a> /
+                                    <a href="https://arxiv.org/abs/1803.09196">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        This approach learns an image embedding that captures both item similarity and outfit compatibility, respecting item type across a high-level taxonomy. It leverages an end-to-end model to jointly reason about interchangeable items and stylistically compatible combinations. The method is evaluated on 68,306 user-created Polyvore outfits, achieving 3–5% improvement over previous state-of-the-art on outfit compatibility prediction and fill-in-the-blank tasks, while enabling a variety of practical fashion queries.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </td>
             </tr>
         </tbody>
