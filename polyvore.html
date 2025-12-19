@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Polyvore Outfits Dataset</title>
+    <link rel="stylesheet" href="stylesheets.css">
+    <style>
+        /* Specific project page overrides to mimic HandsOff layout */
+        body {
+            background-color: #fafafa;
+            padding: 40px 20px;
+        }
+        .project-container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+        .project-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .project-authors {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .project-links {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        .project-links a {
+            margin: 0 15px;
+            font-weight: 700;
+        }
+        /* This class now standardizes all headings */
+        .section-title {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: normal; /* Matches academic project page style */
+        }
+        .abstract-text {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .teaser-img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="project-container">
+        <h1 class="project-title">Polyvore Outfits Dataset</h1>
+        
+        <div class="project-authors">
+            <strong>Mariya I. Vasileva</strong>
+        </div>
+
+        <div class="project-links">
+            <a href="index.html">Home</a>
+            <a href="data/polyvore_paper.pdf">Paper</a>
+            <a href="https://github.com/mvasil/polyvore-dataset">Code / Data</a>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <img src="images/polyvore_hero.png" alt="Polyvore Outfits Dataset Teaser" style="width:100%; height:auto; border:1px solid #ddd; border-radius: 4px;">
+        </div>
+
+        <h2 class="section-title">Abstract</h2>
+        <div class="abstract-text">
+            <p>
+                A large-scale dataset of fashion outfits constructed from real user-generated content on Polyvore, designed to support research in visual compatibility, retrieval, similarity learning, and multimodal reasoning. This dataset has been used extensively in subsequent work on fashion understanding and recommendation, but is often incorrectly cited or attributed. This page serves as the canonical reference.
+            </p>
+        </div>
+
+        <h2 id="overview" class="section-title">Overview</h2>
+        <p>
+            The Polyvore Outfits Dataset is a large-scale fashion dataset constructed from real user-created outfits on the Polyvore platform. It was designed to support research on visual compatibility, multimodal reasoning, and representation learning beyond simple similarity.
+        </p>
+
+        <p>
+            The dataset has been used in multiple papers across computer vision, recommendation systems, and multimodal learning. However, it is frequently referenced without proper attribution or with incorrect citations. This page serves as the authoritative reference for the dataset.
+        </p>
+
+        <h2 id="dataset" class="section-title">Dataset Description</h2>
+        <ul>
+            <li>User-created outfits composed of heterogeneous fashion items</li>
+            <li>Item images, categories, and outfit groupings</li>
+            <li>Designed for compatibility prediction, fill-in-the-blank, and retrieval tasks</li>
+            <li>Supports both similarity and compatibility reasoning</li>
+        </ul>
+
+        <h2 id="usage" class="section-title">Intended Use</h2>
+        <p>
+            This dataset is intended for research in:
+        </p>
+        <ul>
+            <li>Fashion compatibility modeling</li>
+            <li>Visual recommendation systems</li>
+            <li>Metric learning and representation learning</li>
+            <li>Multimodal reasoning</li>
+        </ul>
+
+        <h2 class="section-title">BibTeX</h2>
+        <pre style="background:#f7f7f7;padding:15px;overflow-x:auto;line-height:1.2;border:1px solid #eee;border-radius:5px;">@inproceedings{vasileva2018learning,
+  title={Learning Type-Aware Embeddings for Fashion Compatibility},
+  author={Vasileva, Mariya I. and Plummer, Bryan A. and Dusad, Krishna and Rajpal, Shreya and Kumar, Ranjitha and Forsyth, David A.},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2018}
+}</pre>
+    </div>
+
+</body>
+</html>

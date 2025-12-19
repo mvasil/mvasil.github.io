@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Preload Lato fonts -->
     <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- Meta and styles -->
     <meta charset="UTF-8">
     <meta name="author" content="Mariya I. Vasileva">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,11 +15,10 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="top-nav">
         <ul>
             <li class="nav-item"><a href="index.html">About</a></li>
-            <li class="nav-item"><a href="research.html">Research</a></li>
+            <li class="nav-item active"><a href="research.html">Research</a></li>
             <li class="nav-item"><a href="blog.html">Blog</a></li>
             <li class="nav-item"><a href="cinematography.html">Cinematography</a></li>
             <li class="nav-item"><a href="data/cv.pdf" target="_blank">CV</a></li>
@@ -29,13 +26,13 @@
         </ul>
     </nav>
 
-    <!-- Main container table -->
     <table style="width:100%;max-width:800px;margin:auto;border-collapse:separate;border-spacing:0;">
         <tbody>
             <tr>
                 <td>
 
                     <!-- Research section -->
+
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
                             <tr>
@@ -49,13 +46,44 @@
                         </tbody>
                     </table>
 
+                    <!-- Polyvore Outfits Dataset section -->
+
+                    <!-- <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle;text-align:center;">
+                                    <div style="width:160px;height:120px;border:1px solid #ddd;display:inline-flex;align-items:center;justify-content:center;color:#888;font-size:14px;margin:auto;">
+                                        Dataset
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="polyvore.html">
+                                        <span class="papertitle">Polyvore Outfits Dataset</span>
+                                    </a>
+                                    <br>
+                                    <strong>Mariya I. Vasileva</strong>,
+                                    <a href="https://bryanplummer.com/">Bryan A. Plummer</a>,
+                                    <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>
+                                    <br>
+                                    <em>Large-scale fashion compatibility and visual reasoning dataset</em>
+                                    <br>
+                                    <p></p>
+                                    <p>
+                                        A large-scale dataset of fashion outfits constructed from real user-generated content on Polyvore, designed to support research in visual compatibility, retrieval, similarity learning, and multimodal reasoning. This dataset has been used extensively in subsequent work on fashion understanding and recommendation, but is often incorrectly cited or attributed. This page serves as the canonical reference.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+
                     <!-- HandsOff project section -->
+
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
                             <tr onmouseout="handsoff_stop()" onmouseover="handsoff_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='handsoff_image'>
+                                        <div class="two" id='handsoff_image' style="opacity: 0;">
                                             <img src='images/handsoff1.png' width="160" alt="HandsOff image 1">
                                         </div>
                                         <img src='images/handsoff2.png' width="160" alt="HandsOff image 2">
@@ -67,7 +95,6 @@
                                         function handsoff_stop() {
                                             document.getElementById('handsoff_image').style.opacity = "0";
                                         }
-                                        handsoff_stop();
                                     </script>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -94,13 +121,14 @@
                         </tbody>
                     </table>
 
-                    <!-- Why Do These Match project -->
+                    <!-- Why Do These Match project section -->
+
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
                             <tr onmouseout="match_stop()" onmouseover="match_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='match_image'>
+                                        <div class="two" id='match_image' style="opacity: 0;">
                                             <img src='images/match1.png' width="160" alt="match image 1">
                                         </div>
                                         <img src='images/match2.png' width="160" alt="match image 2">
@@ -112,7 +140,6 @@
                                         function match_stop() {
                                             document.getElementById('match_image').style.opacity = "0";
                                         }
-                                        match_stop();
                                     </script>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -142,12 +169,13 @@
                     </table>
 
                     <!-- Fashion Compatibility project section -->
+
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
                             <tr onmouseout="fashion_stop()" onmouseover="fashion_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='fashion_image'>
+                                        <div class="two" id='fashion_image' style="opacity: 0;">
                                             <img src='images/fashion1.png' width="160" alt="fashion image 1">
                                         </div>
                                         <img src='images/fashion2.png' width="160" alt="fashion image 2">
@@ -159,7 +187,6 @@
                                         function fashion_stop() {
                                             document.getElementById('fashion_image').style.opacity = "0";
                                         }
-                                        fashion_stop();
                                     </script>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -190,12 +217,13 @@
                     </table>
 
                     <!-- Similarity Conditions project section -->
+
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
                             <tr onmouseout="sim_stop()" onmouseover="sim_start()">
                                 <td style="padding:20px;width:25%;vertical-align:middle">
                                     <div class="one">
-                                        <div class="two" id='sim_image'>
+                                        <div class="two" id='sim_image' style="opacity: 0;">
                                             <img src='images/scenet1.png' width="160" alt="sim image 1">
                                         </div>
                                         <img src='images/scenet2.png' width="160" alt="sim image 2">
@@ -207,7 +235,6 @@
                                         function sim_stop() {
                                             document.getElementById('sim_image').style.opacity = "0";
                                         }
-                                        sim_stop();
                                     </script>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
