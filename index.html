@@ -95,7 +95,7 @@
                                         <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile-photo.jpeg" class="hoverZoomLink">
                                     </a>
                                 </td> -->
-                                
+
                             </tr>
                         </tbody>
                     </table>
@@ -133,6 +133,42 @@
                         </tbody>
                     </table>
 
+
+                    <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <video id="polyvore-video" width="200" autoplay loop muted playsinline style="border-radius: 5px;">
+                                            <source src="images/graph-outfits.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <script>
+                                            document.getElementById('polyvore-video').playbackRate = 2.5;
+                                        </script>
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="polyvore.html">
+                                        <span class="papertitle">Polyvore Outfits Dataset</span>
+                                    </a>
+                                    <br>
+                                    <em>Benchmark</em>
+                                    <br>
+                                    <a href="polyvore.html">dataset page</a>
+                                    <p></p>
+                                    <p>
+                                        The Polyvore Outfits Dataset is a large-scale fashion dataset curated by real users on the  <a href="https://en.wikipedia.org/wiki/Polyvore">Polyvore</a> platform.
+                                        Each outfit consists of manually constructed combinations of items that <strong>go well together</strong>, reflecting authentic human styling choices rather than synthetically or algorithmically generated sets.
+                                        This human-driven curation captures implicit knowledge of color harmony, stylistic coherence, and garment compatibility, making the dataset well suited for research in similarity and compatibility learning, visual search and retrieval, recommendation systems, and multimodal reasoning.
+                                        As a result, the dataset has been widely adopted in research across computer vision, recommendation systems, and multimodal learning.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    
                     <!-- HandsOff project section -->
                     <table style="width:100%;margin:auto;border-collapse:separate;border-spacing:0;">
                         <tbody>
@@ -313,7 +349,7 @@
                                     <a href="https://arxiv.org/abs/1908.08589">arXiv</a>
                                     <p></p>
                                     <p>
-                                        Many real-world tasks require models to compare images along multiple similarity conditions (e.g. similarity in color, category or shape). Existing methods often reason about these complex similarity relationships by learning condition-aware embeddings. While such embeddings aid models in learning different notions of similarity, they also limit their capability to generalize to unseen categories since they require explicit labels at test time. To address this deficiency, we propose an approach that jointly learns representations for the different similarity conditions and their contributions as a latent variable without explicit supervision. Comprehensive experiments across three datasets, Polyvore-Outfits, Maryland-Polyvore and UT-Zappos50k, demonstrate the effectiveness of our approach: our model outperforms the state-of-the-art methods, even those that are strongly supervised with pre-defined similarity conditions, on fill-in-the-blank, outfit compatibility prediction and triplet prediction tasks. Finally, we show that our model learns different visually-relevant semantic sub-spaces that allow it to generalize well to unseen categories.
+                                        Many real-world tasks require models to compare images along multiple similarity conditions (e.g. similarity in color, category or shape). Existing methods often reason about these complex similarity relationships by learning condition-aware embeddings. While such embeddings aid models in learning different notions of similarity, they also limit their capability to generalize to unseen categories since they require explicit labels at test time. To address this deficiency, we propose an approach that jointly learns representations for the different similarity conditions and their contributions as a latent variable without explicit supervision. Comprehensive experiments across three datasets, <a href="polyvore.html">Polyvore Outfits</a>, Maryland-Polyvore and UT-Zappos50k, demonstrate the effectiveness of our approach: our model outperforms the state-of-the-art methods, even those that are strongly supervised with pre-defined similarity conditions, on fill-in-the-blank, outfit compatibility prediction and triplet prediction tasks. Finally, we show that our model learns different visually-relevant semantic sub-spaces that allow it to generalize well to unseen categories.
                                     </p>
                                 </td>
                             </tr>

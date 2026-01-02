@@ -4,124 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Polyvore Outfits Dataset</title>
-    <link rel="stylesheet" href="stylesheets.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Polyvore Outfits Dataset",
+      "description": "A large-scale dataset of fashion outfits constructed from real user-generated content on Polyvore, designed to support research in visual compatibility, retrieval, similarity learning, and multimodal reasoning.",
+      "url": "https://mariya.fyi/polyvore-dataset",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Mariya I. Vasileva",
+          "url": "https://mariya.fyi/"
+        },
+        {
+          "@type": "Person",
+          "name": "Bryan A. Plummer",
+          "url": "http://bryanplummer.com/"
+        }
+      ],
+      "citation": "Vasileva, M. I., et al. (2018). Learning Type-Aware Embeddings for Fashion Compatibility. ECCV."
+    }
+    </script>
+
     <style>
-        /* Specific project page overrides to mimic HandsOff layout */
+        /* Exact HandsOff / Isola-Zhang Template Styling */
         body {
-            background-color: #fafafa;
-            padding: 40px 20px;
-        }
-        .project-container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 60px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border-radius: 4px;
-        }
-        .project-title {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        .project-authors {
-            text-align: center;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 300;
             font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1100px;
+            background-color: #ffffff;
+            color: #222;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 38px;
+            text-align: center;
+            margin-top: 50px;
             margin-bottom: 30px;
         }
+
+        .project-authors {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+
+        .project-authors td {
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        .project-authors a {
+            color: #1772d0;
+            text-decoration: none;
+        }
+
+        .affiliations {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
         .project-links {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 18px;
+            font-size: 20px;
+            margin-bottom: 30px;
         }
+
+        /* Light Blue Project Links */
         .project-links a {
-            margin: 0 15px;
-            font-weight: 700;
+            color: #1772d0;
+            text-decoration: none;
+            margin: 0 10px;
         }
-        /* This class now standardizes all headings */
-        .section-title {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 24px;
-            font-weight: normal; /* Matches academic project page style */
+
+        .project-links a:hover, .project-authors a:hover {
+            text-decoration: underline;
         }
-        .abstract-text {
-            text-align: justify;
-            line-height: 1.6;
-            font-size: 16px;
+
+        .teaser-container {
+            width: 700px;
+            margin: 0 auto 40px auto;
+            text-align: center;
         }
-        .teaser-img {
+
+        .teaser-video {
             width: 100%;
             height: auto;
-            margin: 20px 0;
+            border: none;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .content-section {
+            width: 850px;
+            margin: 0 auto;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+
+        h2.section-title {
+            font-weight: 300;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.5em;
+            text-align: justify;
+        }
+
+        pre {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.2em;
+            overflow-x: auto;
             border: 1px solid #eee;
+        }
+
+        ul {
+            line-height: 1.6em;
+            margin-bottom: 20px;
+        }
+
+        .license-wrapper {
+            font-size: 0.85em; 
+            color: #555;
+            text-align: center;
+        }
+
+        @media (max-width: 1100px) {
+            body { width: 95%; }
+            .teaser-container, .content-section { width: 100%; }
         }
     </style>
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Dataset">
 
-    <div class="project-container">
-        <h1 class="project-title">Polyvore Outfits Dataset</h1>
-        
-        <div class="project-authors">
-            <strong>Mariya I. Vasileva</strong>
-        </div>
+    <h1 class="project-title" property="name">Polyvore Outfits Dataset</h1>
+    
+    <table class="project-authors">
+        <tr>
+            <td property="creator" typeof="Person">
+                <a href="https://mariya.fyi/" property="name">Mariya I. Vasileva</a><sup>1</sup>
+            </td>
+            <td property="creator" typeof="Person">
+                <a href="http://bryanplummer.com/" property="name">Bryan A. Plummer</a><sup>2</sup>
+            </td>
+        </tr>
+    </table>
 
-        <div class="project-links">
-            <a href="index.html">Home</a>
-            <a href="data/polyvore_paper.pdf">Paper</a>
-            <a href="https://github.com/mvasil/polyvore-dataset">Code / Data</a>
-        </div>
+    <div class="affiliations">
+        <sup>1</sup>Meta Superintelligence Labs &nbsp;&nbsp;&nbsp;&nbsp; <sup>2</sup>Boston University
+    </div>
 
-        <div style="text-align: center; margin-bottom: 40px;">
-            <img src="images/polyvore_hero.png" alt="Polyvore Outfits Dataset Teaser" style="width:100%; height:auto; border:1px solid #ddd; border-radius: 4px;">
-        </div>
+    <div class="project-links">
+        <a href="index.html">[Home]</a>
+        <a href="https://arxiv.org/pdf/1803.09196">[Paper]</a>
+        <a href="https://github.com/mvasil/fashion-compatibility">[Code]</a>
+        <a href="https://huggingface.co/datasets/mvasil/polyvore-outfits">[Download]</a>
+    </div>
 
-        <h2 class="section-title">Abstract</h2>
-        <div class="abstract-text">
-            <p>
-                A large-scale dataset of fashion outfits constructed from real user-generated content on Polyvore, designed to support research in visual compatibility, retrieval, similarity learning, and multimodal reasoning. This dataset has been used extensively in subsequent work on fashion understanding and recommendation, but is often incorrectly cited or attributed. This page serves as the canonical reference.
-            </p>
-        </div>
+    <div class="teaser-container">
+        <video class="teaser-video" id="polyvore-video" autoplay loop muted playsinline>
+            <source src="images/graph-outfits.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <script>
+            document.getElementById('polyvore-video').playbackRate = 1.6;
+        </script>
+    </div>
 
+    <hr>
+
+    <div class="content-section">
         <h2 id="overview" class="section-title">Overview</h2>
         <p>
-            The Polyvore Outfits Dataset is a large-scale fashion dataset constructed from real user-created outfits on the Polyvore platform. It was designed to support research on visual compatibility, multimodal reasoning, and representation learning beyond simple similarity.
-        </p>
+            The Polyvore Outfits Dataset is a large-scale fashion dataset curated by real users on the 
+            <a href="https://en.wikipedia.org/wiki/Polyvore">Polyvore</a> platform.
 
+            Each outfit consists of manually constructed combinations of items that 
+            <strong>go well together</strong>, reflecting authentic human styling choices rather than 
+            synthetically or algorithmically generated sets.
+        </p>
+        
         <p>
-            The dataset has been used in multiple papers across computer vision, recommendation systems, and multimodal learning. However, it is frequently referenced without proper attribution or with incorrect citations. This page serves as the authoritative reference for the dataset.
+            This human-driven curation captures implicit knowledge of color harmony, stylistic coherence, 
+            and garment compatibility, making the dataset well suited for research in similarity and 
+            compatibility learning, visual search and retrieval, recommendation systems, and multimodal reasoning.
+    
+            As a result, the dataset has been widely adopted in research across computer vision, 
+            recommendation systems, and multimodal learning.
         </p>
+    </div>
 
+    <hr>
+
+    <div class="content-section">
         <h2 id="dataset" class="section-title">Dataset Description</h2>
-        <ul>
-            <li>User-created outfits composed of heterogeneous fashion items</li>
-            <li>Item images, categories, and outfit groupings</li>
-            <li>Designed for compatibility prediction, fill-in-the-blank, and retrieval tasks</li>
-            <li>Supports both similarity and compatibility reasoning</li>
+        
+        <ul style="margin-bottom: 30px;">
+            <li><strong>68,306</strong> user-created outfits composed of <strong>261,058</strong> heterogeneous fashion items</li>
+            <li>Rich metadata consisting of item descriptions, categories, and outfit groupings</li>
+            <li>Benchmarks for compatibility prediction, fill-in-the-blank (FITB) outfit completion, and multimodal retrieval</li>
+            <li>Supports research in both similarity and compatibility reasoning</li>
         </ul>
 
+        <p>Two types of evaluation splits are provided to benchmark performance:</p>
+        
+        <ul>
+            <li style="margin-bottom: 12px;">
+                <strong>Non-disjoint (outfit-level):</strong> 
+                an easier setting where no outfits overlap between training and test sets, though <em>individual items</em> may appear in both.
+            </li>
+            <li>
+                <strong>Disjoint (item-level):</strong> 
+                a more challenging and <strong>recommended</strong> split with <em>no overlap</em> of individual items between training and test sets; it evaluates the model's ability to generalize to completely unseen fashion items.
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="content-section">
         <h2 id="usage" class="section-title">Intended Use</h2>
         <p>
             This dataset is intended for research in:
         </p>
         <ul>
-            <li>Fashion compatibility modeling</li>
+            <li>Fashion similarity and compatibility learning</li>
+            <li>Outfit modeling and generation</li>
             <li>Visual recommendation systems</li>
+            <li>Visual search and retrieval</li>
             <li>Metric learning and representation learning</li>
+            <li>Contrastive learning</li>
+            <li>Vision and language learning</li>
             <li>Multimodal reasoning</li>
         </ul>
+    </div>
 
+    <hr>
+
+    <div class="content-section">
+        <h2 id="license" class="section-title">License</h2>
+        <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="license-wrapper">
+          <p>
+            <span property="dct:title">The Polyvore Outfits Dataset</span> by 
+            <a rel="cc:attributionURL" property="cc:attributionName" href="https://mariya.fyi/" target="_blank" rel="noopener noreferrer">Mariya I. Vasileva</a> and 
+            <a rel="cc:attributionURL" property="cc:attributionName" href="http://bryanplummer.com/" target="_blank" rel="noopener noreferrer">Bryan A. Plummer</a> 
+            is licensed under 
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+          </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="content-section" style="padding-bottom: 60px;">
         <h2 class="section-title">BibTeX</h2>
-        <pre style="background:#f7f7f7;padding:15px;overflow-x:auto;line-height:1.2;border:1px solid #eee;border-radius:5px;">@inproceedings{vasileva2018learning,
-  title={Learning Type-Aware Embeddings for Fashion Compatibility},
-  author={Vasileva, Mariya I. and Plummer, Bryan A. and Dusad, Krishna and Rajpal, Shreya and Kumar, Ranjitha and Forsyth, David A.},
-  booktitle={European Conference on Computer Vision (ECCV)},
-  year={2018}
-}</pre>
+        <pre>@inproceedings{vasileva2018learning,
+            title={Learning Type-Aware Embeddings for Fashion Compatibility},
+            author={Vasileva, Mariya I. and Plummer, Bryan A. and Dusad, Krishna and Rajpal, Shreya and Kumar, Ranjitha and Forsyth, David A.},
+            booktitle={European Conference on Computer Vision (ECCV)}, 
+            year={2018}
+        }</pre>
     </div>
 
 </body>
