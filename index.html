@@ -42,7 +42,9 @@
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p class="name" style="text-align:center;">Mariya I. Vasileva</p>
                                     <p>
-                                        My name is Mariya, and I'm interested in all things computer vision, generative models, video analysis and understanding, and ethics of AI systems at scale. I spent a number of years in industry research and worked on a range of problems, from image and video generative models, to visual recommender engines, to 2D-to-3D human body shape and pose modelling, to synthetic data generation for efficient training of foundation models at scale, to fairness and explainability of AI systems. I obtained my PhD in Computer Science from the <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a> under the advisorship of professor <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>, where I researched problems in vision and language, visual search and retrieval, and applications of computer vision in the fashion domain.
+                                        My name is Mariya, and I'm a Senior Research Scientist at Meta Superintelligence Labs, where I work on research in multimodal safety and alignment, scalable oversight, and model evaluations. 
+                                        Prior to that, I was an Applied Scientist at Amazon AWS, 
+                                        I'm interested in all things computer vision, generative models, video analysis and understanding, and ethics of AI systems at scale. I spent a number of years in industry research and worked on a range of problems, from image and video generative models, to visual recommender engines, to 2D-to-3D human body shape and pose modelling, to synthetic data generation for efficient training of foundation models at scale, to fairness and explainability of AI systems. I obtained my PhD in Computer Science from the <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a> under the advisorship of professor <a href="http://luthuli.cs.uiuc.edu/~daf/">David A. Forsyth</a>, where I researched problems in vision and language, visual search and retrieval, and applications of computer vision in the fashion domain.
                                     </p>
                                     <p>
                                         If you’re curious about my work, interested in collaborating, or want to share any thoughts or suggestions, please reach out! I’m always happy to connect.
@@ -79,23 +81,23 @@
 
                                 </td>
 
-                                <td style="padding:2.5%;width:40%;max-width:40%">
-                                    <a href="images/profile-photo-1.jpg">
-                                      <img
-                                        src="images/profile-photo-2.jpg"
-                                        alt="profile photo"
-                                        style="width:100%;max-width:100%"
-                                        onmouseover="this.src='images/profile-photo-2.jpg'"
-                                        onmouseout="this.src='images/profile-photo-1.jpg'">
-                                    </a>
-                                  </td>                                  
-
-                                <!-- <td style="padding:2.5%;width:40%;max-width:40%">
-                                    <a href="images/profile-photo.jpeg">
-                                        <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile-photo.jpeg" class="hoverZoomLink">
-                                    </a>
-                                </td> -->
-
+                                <td style="padding:2.5%;width:80%;max-width:100%">
+                                    <div class="one" onmouseover="photo_start()" onmouseout="photo_stop()">
+                                        <div class="two" id='profile_photo' style="opacity:0;">
+                                            <img class="profile-img" src='images/profile-photo-2.jpg' alt="profile photo 2">
+                                        </div>
+                                        <img class="profile-img" src='images/profile-photo-1.jpg' alt="profile photo 1">
+                                    </div>
+                                    
+                                    <script type="text/javascript">
+                                        function photo_start() { 
+                                            document.getElementById('profile_photo').style.opacity = "1"; 
+                                        }
+                                        function photo_stop() { 
+                                            document.getElementById('profile_photo').style.opacity = "0"; 
+                                        }
+                                    </script>
+                                </td>                              
                             </tr>
                         </tbody>
                     </table>
