@@ -226,3 +226,56 @@ span.highlight {
     font-weight: 400;
     margin-top: 2px;
 }
+
+/* ===========================
+   MOBILE LAYOUT FIXES
+   (stack table columns, enlarge media)
+=========================== */
+@media (max-width: 780px) {
+  /* Make all table layouts behave like stacked blocks on mobile */
+  table, tbody, tr, td {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Reduce cramped padding a bit (keeps desktop unchanged) */
+  td {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Ensure media scales up instead of shrinking into a tiny left column */
+  img, video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Your hover-overlay container: allow it to grow on mobile */
+  .one {
+    width: 100% !important;
+    max-width: 520px;   /* keeps it big but not absurd */
+    margin: 0 auto;
+  }
+
+  /* Profile image: stop forcing fixed height on mobile */
+  .profile-img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Nav: make sure it flows nicely on mobile */
+  .top-nav {
+    position: static;
+    margin: 18px auto 0;
+    right: auto;
+    top: auto;
+    text-align: center;
+  }
+  .top-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
